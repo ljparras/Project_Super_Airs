@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'Bebas';
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: 'Mogen';
+    src: url(../fonts/Mogen-Bold.ttf);
+}
+*{
+    font-family: 'Poppins';
+}
+header {
+    position: relative;
+    width: 250px;
+    height: 100%;
+    float:left;
+    background-color: black;
+    overflow: hidden;
+    margin-top: 0px;
+}
+header .logo{
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+    background: #1d1d1d
+
+}
+header .logo img {
+    height: 150px;
+    padding: 20px 40px;
+}
+
+header .nav ul li{
+    margin:20px 2px 5px 0px;
+}
+
+header .nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    background-color: aqua;
+    margin: 8px 0px;
+    border-radius: 30px;
+    text-align: left;
+    width: 130px;
+    display: inline-block;
+    font-family: 'Mogen';
+}
+
+header .cerrar {
+    background-color: #444242;
+    margin: 5px auto;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 14px;
+    position: revdert;
+    left: 30px;
+    bottom: 30px;
+    width: 100px;
+}
+header .cerrar a{
+    color: white;
+}
+
+section {
+    align-items: center;
+    width: calc(100% - 250px);
+    float: right;
+}
+ section .bienvenida{
+    text-align: center;
+    padding-inline-start: 10px;
+ }
+
+ table {
+    border: 1px solid #000;
+    border-collapse: separate;
+    border-spacing: 5px;
+    border-radius: 10px;
+    align-self: center;
+    width: 90%;
+  }
+  
+  th {
+    border: 1px solid #555;
+    padding: 20px;
+  }
