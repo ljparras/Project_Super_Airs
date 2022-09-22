@@ -1,0 +1,25 @@
+
+
+*{ box-sizing: border-box;
+}
+
+
+.container{
+    color: rgb(0, 0, 0);
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.container p{
+    text-align: justify;
+}
+.logo{
+    text-align: center;
+    size: 10px;
+}
