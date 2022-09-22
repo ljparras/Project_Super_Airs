@@ -1,4 +1,14 @@
 
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins Semi';
+    src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
 body{
     background-image: url(../imgs/Fondo-from-registro.jpg); 
     background-size: auto;
@@ -8,6 +18,7 @@ body{
     text-align: center;
     font-size: 25px;
     margin-bottom: 6px;
+    font-family: 'Poppins';
     }
 .container {
     width: 490px;
@@ -29,8 +40,8 @@ padding: 4px;
 border-radius: 6px;
 margin-top: 0px;
 border: 1px solid #FFFFFF;
-font-family: "Roboto";
-src: url(../fonts/roboto/Roboto-Regular.ttf);
+font-family: 'Poppins';
+
 }
 
 .vinculo-termino {
@@ -51,7 +62,7 @@ src: url(../fonts/roboto/Roboto-Regular.ttf);
 
 .modal-title{
    color: black;
-    src: url(../fonts/roboto/Roboto-Bold.ttf);
+  
 }
 
 .modal-body{
@@ -61,4 +72,5 @@ src: url(../fonts/roboto/Roboto-Regular.ttf);
 .form-label{
     margin-top: 0px;  
     font-size: 14px;
+    font-family: 'Poppins';
 }

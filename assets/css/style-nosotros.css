@@ -1,8 +1,20 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
 
+@font-face {
+    font-family: 'Poppins Semi';
+    src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
 
 *{ box-sizing: border-box;
 }
-
+body{
+    background-image: url(../imgs/f-nosotros.jpg); 
+    background-size: auto;
+    background-attachment: fixed; 
+    }
 
 .container{
     color: rgb(0, 0, 0);
@@ -14,10 +26,12 @@
 
 .container h1{
     text-align: center;
+    font-family: 'Poppins';
 }
 
 .container p{
     text-align: justify;
+    font-family: 'Poppins';
 }
 .logo{
     text-align: center;
