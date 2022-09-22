@@ -10,17 +10,34 @@
     font-family: 'Mogen';
     src: url(../fonts/Mogen-Bold.ttf);
 }
+
+@font-face {
+    font-family: 'iconitos';
+    src:  url('../fonts/iconos/icomoon.eot?shfwfm');
+    src:  url('../fonts/iconos/icomoon.eot?shfwfm#iefix') format('embedded-opentype'),
+      url('../fonts/iconos/icomoon.ttf?shfwfm') format('truetype'),
+      url('../fonts/iconos/icomoon.woff?shfwfm') format('woff'),
+      url('../fonts/iconos/icomoon.svg?shfwfm#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
 *{
     font-family: 'Poppins';
 }
 header {
     position: relative;
     width: 250px;
-    height: 100%;
+    height: 90%;
     float:left;
     background-color: black;
     overflow: hidden;
     margin-top: 0px;
+}
+
+header a .casa::before{
+    font-family: 'iconitos';
+    content: '/e976';
 }
 header .logo{
     display: inline-block;
@@ -34,22 +51,22 @@ header .logo img {
     padding: 20px 40px;
 }
 
-header .nav ul li{
-    margin:20px 2px 5px 0px;
+header .logo .navi ul li a .perfil::before{
+    font-family: 'iconitos';
+    content: '\e976';
 }
 
-header .nav ul li a{
+header .menuv ul li a{
     color: white;
     text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
-    background-color: aqua;
+    background-color: #000;
     margin: 8px 0px;
     border-radius: 30px;
     text-align: left;
     width: 130px;
     display: inline-block;
-    font-family: 'Mogen';
 }
 
 header .cerrar {
@@ -70,7 +87,7 @@ header .cerrar a{
 
 section {
     align-items: center;
-    width: calc(100% - 250px);
+    width: calc(100% - 280px);
     float: right;
 }
  section .bienvenida{
@@ -85,9 +102,34 @@ section {
     border-radius: 10px;
     align-self: center;
     width: 90%;
-  }
-  
-  th {
-    border: 1px solid #555;
-    padding: 20px;
-  }
+    padding: 30px;
+}
+thead {
+    text-decoration: #1257ab;
+}
+tr {
+    border:solid 1px #000;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+}
+
+footer .linea{
+    border-top: 1px solid black;
+    height: 5px;
+    max-width: 100%;
+}
+
+footer .redes img{
+    width: 25px;
+    height: 25px;
+}
+footer .derechos{
+    background: #1257ab;
+    width: 100%;
+    color:#000;
+    text-align: center;
+}
