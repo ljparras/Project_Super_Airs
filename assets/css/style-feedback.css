@@ -1,3 +1,13 @@
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins Semi';
+    src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
 body{
     background-image: url(../imgs/fondo-feedback.jpg); 
     background-size: auto;
@@ -20,6 +30,7 @@ body{
 
 .container h3{
     text-align: center;
+    font-family: 'Poppins';
 }
 
 section{
