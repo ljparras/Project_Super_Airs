@@ -1,0 +1,6 @@
+.interior .box{
+    transform: translate(-50, -50);
+}
+input.src{
+    padding: 9px 7px 7px;
+}

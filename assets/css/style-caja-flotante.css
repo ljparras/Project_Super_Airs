@@ -9,11 +9,7 @@
     src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
 }
 
-body{
-    background-image: url(../imgs/Fondo-from-registro.jpg); 
-    background-size: auto;
-    background-attachment: fixed; 
-    }
+
 .container h4 {
     text-align: center;
     font-size: 25px;
@@ -25,12 +21,22 @@ body{
     background: #1DA2AC;
     padding: 25px;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 0px;
     border-radius: 12px;
     color: white;
     box-shadow: 7px 13px 37px #000;
-    margin-bottom: 3px;
+    margin-bottom: 0px;
 }
+
+
+
+.fondo2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    background-image: url(../imgs/Fondo-from-registro.jpg); 
+}
+
 
 .form-control{
 font-size: 14px;
@@ -38,7 +44,7 @@ width: 100%;
 background: #BBFAFF;
 padding: 4px;
 border-radius: 6px;
-margin-top: 0px;
+margin-top: 10px;
 border: 1px solid #FFFFFF;
 font-family: 'Poppins';
 

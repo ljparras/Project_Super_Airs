@@ -24,7 +24,7 @@
   font-family: 'Poppins';
 }
 
-body .containerg{
+.containerg{
   background-image: url("../Imgs/Banner.jpg");
   background-repeat: no-repeat  center center fixed ;
   -webkit-background-size: cover;
@@ -42,11 +42,11 @@ body .containerg{
   
 }
 
-body .containerb{
+.containerb{
   background-color: rgb(220, 232, 232);
 }
 
-body .piepag{
+.piepag{
   background-color: aliceblue;
 }
 
@@ -56,10 +56,6 @@ header .logo, header .Login, header .buscador, header .admin{
   font-weight: bold;
 }
 
-header .logo img{
-  width: 200px;
-  padding: 20px;
-}
 
 header .Login, header .buscador, header .admin {
   vertical-align: top;
