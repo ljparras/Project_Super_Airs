@@ -1,31 +1,24 @@
 @font-face {
   font-family: 'Poppins';
-  src: url(../fonts/Poppins-Regular.ttf);
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
 }
 
 @font-face {
   font-family: 'Poppins Semi';
-  src: url(../fonts/Poppins-SemiBold.ttf);
+  src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
 }
 
-@font-face {
-  font-family: 'iconitos';
-  src:  url('../fonts/Iconos/icomoon.eot?16vzj0');
-  src:  url('../fonts/Iconos/icomoon.eot?16vzj0#iefix') format('embedded-opentype'),
-    url('../fonts/Iconos/icomoon.ttf?16vzj0') format('truetype'),
-    url('../fonts/Iconos/icomoon.woff?16vzj0') format('woff'),
-    url('../fonts/Iconos/icomoon.svg?16vzj0#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
 
 *{
   font-family: 'Poppins';
 }
 
+body{
+  position: relative;
+}
+
 body .containerg{
-  background-image: url("../Imgs/Banner.jpg");
+  background-image: url("../imgs/banner-2.jpg");
   background-repeat: no-repeat  center center fixed ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -37,96 +30,212 @@ body .containerg{
   width: 1600px;
   margin: auto;
   max-width: 100%;
-  
-  
-  
 }
 
 body .containerb{
-  background-color: rgb(220, 232, 232);
+  background-color: none;
+  position: relative;
+  top:-70px;
 }
 
 body .piepag{
   background-color: aliceblue;
 }
 
+header .logo img{
+  width: 145px;
+  padding: 8px;
+}
 
-header .logo, header .Login, header .buscador, header .admin{
+header .logo, .ingreso, .buscador, .admin{
   display: inline-block;
   font-weight: bold;
-}
-
-header .logo img{
-  width: 200px;
-  padding: 20px;
-}
-
-header .Login, header .buscador, header .admin {
   vertical-align: top;
   margin: auto;
 }
 
-header .Login ul li{
+header .ingreso, .buscador, .admin{
+  display: inline-block;
+  font-weight: bold;
+  padding-top: 15px;
+  margin: auto;
+  margin-right: 60px;
+}
+
+header .ingreso ul li img{
+  width: 16px;
+}
+
+header .ingreso ul li{
   display: inline-block;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-header .Login ul li a, header .admin ul li a{
+header .ingreso ul li a, header .admin ul li a{
   color: rgba(12, 11, 9, 0.821);
   text-decoration: none;
   font-size: 18px;
 }
 
-header .leyenda{
+.buscador input.src{
+  padding: 9px 10px 9px 32px;
+  outline: none;
+  font-size: 14px;
+  border-radius: 15px;
+  color: #242525;
+  border: 3px solid #84dcff;
+  background: rgb(243, 239, 239) url(../imgs/lupa.png) no-repeat 9px center;
+  float: inline-end;
+  width: 200px;
+  transition: all .5s;
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 05px;
+}
+
+nav a{
+  text-decoration:none;
+  color:black;
+  font-size:14px;
+  }
+        
+nav li{
+  display:inline-block;
+  width:300px;
+  height:30px;
+  padding:none;
+  background-color:none;
+  text-align: left;
+  
+  position:relative;
+}
+        
+nav li:hover{
+  
+  color:#000;
+}
+        
+nav li>ul{
+  display:none;
+}
+
+nav li:hover>ul{
+  display:block;
+  position:absolute;
+  top:30px;
+  left:0px;
+}
+
+.leyenda{
   font-weight: bold;
-  font-size: 35px;
+  font-size: 50px;
+  width: 40%;
+  margin-left: 150px;
+  margin-right: 0px;
+  margin-top: 0%;
+  text-align: center;
+  padding: 0px;
+}
+
+form{
+  display: block;
+  width: 600px;
+  padding: 25px;
+  border: #1257ab 5px solid;
+  border-radius: 50px;
+  max-width: 100%;
+  margin: auto;
+  background-color:#1257ab;
+  box-shadow: 3px 3px 2px 2px #12519d ;
+  }
+
+fieldset{
+  border-width: 0px;
+  width: inherit;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vuelosdisponibles{
+  height: 70px;
 }
 
 section .reservas{
   text-align: center;
   width: 100%;
+  color: white;
+  font-size: 18px;
+  font-family: po;
 }
 
-section .escojedestino, section .calendario{
-  margin-top: 20px;
+section .iryregresar, section .escojedestino, section .calendario{
+  margin-top: 10px;
   margin-bottom: 20px;
-}
-
-
-form{
-display: block;
-width: 600px;
-padding: 25px;
-border: powderblue 5px solid;
-border-radius: 50px;
-max-width: 100%;
-margin: auto;
-background-color: aliceblue;
-
-
-}
-
-fieldset{
-  border-width: 0px;
+  font-size: 18px;
+  
 }
 
 section .iryregresar {
  width: 450px;
- font-weight: bold;
  display: inline-block;
+ font-size: 20px;
+
 }
 
-footer .buttonredes .facebook::before{
-  font-family: 'iconitos';
-  content: '/ea91';
+.escojedestino #mciudad{
+  padding: 6px;
 }
 
-footer {
-  display: block;
-  width: 600px;
-  padding: 25px;
-  border-radius: 0px;
+input[type=date], select, textarea{
+  padding: 6px;
+  cursor: pointer;
+}
+
+input[type=submit]{
+  background-color: rgb(243, 248, 243);
+  padding: 12px 20px;
+  border: 0ch;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+footer{
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  margin-top: auto;
+}
+
+footer .linea{
+  border-top: 1px solid black;
+  height: 5px;
   max-width: 100%;
-  margin: auto;
 }
+
+footer .redes{
+  display: flex;
+  justify-content: center;
+}
+
+footer .redes img{
+  width: 25px;
+  height: 25px;
+  padding: 2px 10px;
+}
+
+footer .derechos{
+  background: #1257ab;
+  width: 100%;
+  text-align: center;
+  height: 30px;
+}
+
+.derechos p {
+  font-size: medium;
+  margin-top: 2px;
+  padding: 2px 0px; 
+}
+
