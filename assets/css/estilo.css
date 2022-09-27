@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 
 
  .login-box{
     margin-top: 300px;
      width:400px;
      height: 500px;
+=======
+.login-box{
+     width:450px;
+     height: 550px;
+>>>>>>> George
      background:#133688;
      color:white;
      top: 50%;
@@ -45,7 +51,11 @@
     margin-bottom: 30px;
 }
 
+<<<<<<< HEAD
  .login-box input[type="text"],
+=======
+.login-box input[type="text"],
+>>>>>>> George
 .login-box input[type="Password"]{
     border: none;
     border-bottom: 1px solid black;
@@ -70,13 +80,18 @@
     color: #fff;
 }
 
+<<<<<<< HEAD
  .login-box a{
+=======
+.login-box a{
+>>>>>>> George
        font-size: 18px;
        line-height: 20px;
        color:rgb(255, 255, 255);
        display:block;      
 }
 
+<<<<<<< HEAD
  .login-box a:hover{
     color: #fff;
 }
@@ -153,6 +168,9 @@
 }
 
 .login-piloto input[type="submit"]:hover{
+=======
+.login-box a:hover{
+>>>>>>> George
     color: #fff;
 }
 
