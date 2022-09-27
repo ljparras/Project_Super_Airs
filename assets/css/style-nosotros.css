@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins Semi';
+    src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+*{ box-sizing: border-box;
+}
+
+
+.container{
+    color: rgb(0, 0, 0);
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px;
+}
+
+.container h1{
+    bottom: 20px;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+.container p{
+    text-align: justify;
+    font-family: 'Poppins';
+}
+.logo1{
+    bottom: 20px;
+    text-align: center;
+    
+}
+
+
+.flex-center{
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    background-image: url(../imgs/f-nosotros.jpg);
+}

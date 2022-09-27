@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins Semi';
+  src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'iconitos';
+  src:  url('../fonts/Iconos/icomoon.eot?16vzj0');
+  src:  url('../fonts/Iconos/icomoon.eot?16vzj0#iefix') format('embedded-opentype'),
+    url('../fonts/Iconos/icomoon.ttf?16vzj0') format('truetype'),
+    url('../fonts/Iconos/icomoon.woff?16vzj0') format('woff'),
+    url('../fonts/Iconos/icomoon.svg?16vzj0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+*{
+  font-family: 'Poppins';
+}
+
+.containerg{
+  background-image: url("../Imgs/Banner.jpg");
+  background-repeat: no-repeat  center center fixed ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover ;
+  position: relative;
+  overflow: hidden;
+  height: 700px;
+  width: 1600px;
+  margin: auto;
+  max-width: 100%;
+  
+  
+  
+}
+
+.containerb{
+  background-color: rgb(220, 232, 232);
+}
+
+.piepag{
+  background-color: aliceblue;
+}
+
+
+header .logo, header .Login, header .buscador, header .admin{
+  display: inline-block;
+  font-weight: bold;
+}
+
+
+header .Login, header .buscador, header .admin {
+  vertical-align: top;
+  margin: auto;
+}
+
+header .Login ul li{
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+header .Login ul li a, header .admin ul li a{
+  color: rgba(12, 11, 9, 0.821);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header .leyenda{
+  font-weight: bold;
+  font-size: 35px;
+}
+
+section .reservas{
+  text-align: center;
+  width: 100%;
+}
+
+section .escojedestino, section .calendario{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+form{
+display: block;
+width: 600px;
+padding: 25px;
+border: powderblue 5px solid;
+border-radius: 50px;
+max-width: 100%;
+margin: auto;
+background-color: aliceblue;
+
+
+}
+
+fieldset{
+  border-width: 0px;
+}
+
+section .iryregresar {
+ width: 450px;
+ font-weight: bold;
+ display: inline-block;
+}
+
+footer .buttonredes .facebook::before{
+  font-family: 'iconitos';
+  content: '/ea91';
+}
+
+footer {
+  display: block;
+  width: 600px;
+  padding: 25px;
+  border-radius: 0px;
+  max-width: 100%;
+  margin: auto;
+}

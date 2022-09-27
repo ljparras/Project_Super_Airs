@@ -1,0 +1,13 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family: helvetica;
+}
+
+
+.banner{
+
+	margin:0;
+	background-size: auto;
+    background-attachment: fixed;
+}

@@ -1,0 +1,58 @@
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins Semi';
+    src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
+body{
+    background-image: url(../imgs/fondo-feedback.jpg); 
+    background-size: auto;
+    background-attachment: fixed; 
+    }
+*{ box-sizing: border-box;
+}
+
+.container{
+    color: white;
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.container p{
+    text-align: center;
+    font-size: 12;
+}
+
+.container h3{
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+section{
+    border: 2px solid #1DA2AC;
+    border-radius: 12px;
+    padding: 6px;
+    margin: 6px 0;
+   
+}
+
+
+label{
+    display: block;
+    padding: 2px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px dashed #1DA2AC;
+    margin-bottom: 3px;
+    
+    
+}
+
+label:hover{
+    background: #89c4c9;
+}
