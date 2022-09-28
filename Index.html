@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/style-b-navegacion.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min1.css">
     <link rel="stylesheet" href="assets/css/estilo.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
     
     
 </head>
@@ -16,7 +17,7 @@
        
     <header><!--Inicio Barra de Navegacion-->
         <div class="interior">
-          <a href="" class="logo" target="blank"><img src="assets/imgs/Logo-png.png" alt="Logo"></a>
+          
           <nav class="navegacion">
             <ul>
                 <li><a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal" target="blank" >Login</a></li>
@@ -29,6 +30,9 @@
                   <li><a href="ModalAdmin" data-bs-toggle="modal" data-bs-target="#ModalAdmin" target="blank">Login Admin</a></li>
                 </ul>
               </li>
+                <div class="buscador">
+                    <input type="text" name="search" placeholder="Buscar" class="src" autocomplete="off">   
+                </div>
             </ul>
           </nav>
         </div>
@@ -124,13 +128,19 @@
         </div>
       </div><!--Fin del modal popUp-->
     
-    <div class="leyenda">
-        <p>ELIGE EL MEJOR VUELO PARA TU PROXIMA AVENTURA</p>
+    <div class="containerg">     
+            
+
+            <a href="" class="logo" target="blank"><img src="assets/imgs/logo/Logo.png" alt="Logo"></a>
+            <div class="leyenda">
+                <p>ELIGE EL MEJOR VUELO PARA TU PROXIMA AVENTURA</p>
+            </div>
+                         
     </div>
 
     <div class="containerb">   
         <section>
-            <form>
+            <form class="formvuelos">
                 <fieldset class="reservas">
                     <div class="iryregresar">
                         <input id="idayregreso" type="radio" name="forma" value="idayregreso" checked>
@@ -140,6 +150,7 @@
                     </div>
                     <div class="escojedestino">
                         <select name="menuciudades" id="mciudad">
+                            <option value="0">Origen</option>
                             <option value="0"></option>
                             <option value="1">NEIVA</option>
                             <option value="2">BOGOTÁ</option>
@@ -147,7 +158,7 @@
                             <option value="4">BARRANQUILLA</option>
                         </select>   
                         <select name="menuciudades" id="mciudad">
-                            <option value="0"></option>
+                            <option value="0">Destino</option>
                             <option value="1">NEIVA</option>
                             <option value="2">BOGOTÁ</option>
                             <option value="3">CARTAGENA</option>
@@ -180,7 +191,7 @@
             </div>
             <div class="derechos">
                 
-                    <p>SuperAirs2022 | Todos los derechos reservados.</p>
+                    <p>SuperAirs2022  |  Todos los derechos reservados.</p>
                 
             </div>
        
