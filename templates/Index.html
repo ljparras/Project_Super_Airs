@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomeSuperAirs</title>
-    <link rel="shortcut icon" type="image/jpeg" href="assets/imgs/Logo-png -1.png">
-    <link rel="stylesheet" href="assets/css/style-b-navegacion.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min1.css">
-    <link rel="stylesheet" href="assets/css/estilo.css">
-    <link rel="stylesheet" href="assets/css/estilos.css">
-    
+    <link rel="shortcut icon" type="image/jpeg" href="{{url_for('static', filename='imgs/Logo-png -1.png')}}">
+
+
+    <link  rel="stylesheet" href="{{url_for('static', filename='css/style-b-navegacion.css')}}">
+    <link  rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min1.css')}}">
+    <link  rel="stylesheet" href="{{url_for('static', filename='css/estilo.css')}}">
+    <link  rel="stylesheet" href="{{url_for('static', filename='css/estilos.css')}}">
     
 </head>
 <body>
@@ -42,7 +43,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
           <div class="login-admin">
-              <img class="avatar" src="assets/imgs/admin.png" alt="logotipo">
+              <img class="avatar" src="{{url_for('static', filename='imgs/admin.png')}}" alt="logotipo">
              
       
               <h4>Login Admin</h4>
@@ -71,7 +72,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
           <div class="login-piloto">
-              <img class="avatar" src="assets/imgs/ico-login-piloto.png" alt="logotipo">
+              <img class="avatar" src="{{url_for('static', filename='imgs/ico-login-piloto.png')}}" alt="logotipo">
              
       
               <h4>Login Pilotos</h4>
@@ -102,7 +103,7 @@
           
            
               <div class="login-box">
-                  <img class="avatar" src="assets/imgs/Logo-png -1.png" alt="logotipo">
+                  <img class="avatar" src="{{url_for('static', filename='imgs/Logo-png -1.png')}}" alt="logotipo">
                  
           
                   <h1>LOGIN</h1>
@@ -131,7 +132,7 @@
     <div class="containerg">     
             
 
-            <a href="" class="logo" target="blank"><img src="assets/imgs/logo/Logo.png" alt="Logo"></a>
+            <a href="" class="logo" target="blank"><img src="{{url_for('static', filename='imgs/logo/Logo.png')}}" alt="Logo"></a>
             <div class="leyenda">
                 <p>ELIGE EL MEJOR VUELO PARA TU PROXIMA AVENTURA</p>
             </div>
