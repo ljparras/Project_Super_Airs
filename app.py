@@ -17,3 +17,7 @@ def registro():
 @app.route('/nosotro.html')
 def nosotros():
     return render_template ('nosotro.html')
+
+@app.route('/pcontacto.html')
+def contacto():
+    return render_template ('pcontacto.html')    
