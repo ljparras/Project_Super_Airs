@@ -18,7 +18,7 @@
 
 header{
 	width: 100%;
-	height: 70px;
+	height: 56px;
 	background-color: #26719c;
 }
 .interior{
@@ -26,21 +26,12 @@ header{
 	padding: 0 0x;
 	margin: auto;
 }
-.logo{
-	float: left;
-	padding: 5px 20px 0;
-}
-.logo img{
-	height: 60px;
-}
-.logo img:hover{
-	transform: scale(1.1);
-}
+
 .navegacion{
 	float: right;
 	display: flex;
 	align-items: center;
-	min-height: 90px;
+	min-height: 56px;
 	z-index: 1000;
 }
 .navegacion ul{
@@ -52,6 +43,7 @@ header{
 	position: relative;
 	transition: .3s linear;
 	z-index: 1000;
+	margin-top: 10px;
 }
 .navegacion ul li:hover{
 	transform: scale(1.1);
@@ -78,8 +70,8 @@ header{
 	position: absolute;
 	width: 100%;
 }
-.navegacion .submenu .hijos li{
-	display: block;
+.navegacion .submenu .hijos li, .buscador{
+	display: inline-block;
 	
 	border-bottom: none;
 }
@@ -110,4 +102,19 @@ header{
 	background-color: #fff;
 	border-color: #8c10b3;
 	box-shadow: 0 0 5px #6dcff680;
+}
+
+.buscador input.src{
+    padding: 9px 10px 9px 32px;
+    outline: none;
+    font-size: 14px;
+    border-radius: 15px;
+    color: #242525;
+    border: 3px solid #1257ab;
+    background: rgb(243, 239, 239) url(../imgs/lupa.png) no-repeat 9px center;
+    float: inline-end;
+    width: 200px;
+    transition: all .5s;
+    max-width: 100%;
+    margin: auto;
 }
