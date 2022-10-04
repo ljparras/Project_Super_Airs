@@ -24,15 +24,7 @@ def formregistro():
          
 @app.route('/registro', methods=['GET', 'POST'])
 def registro():
-<<<<<<< HEAD
-   if  request.method == 'POST':
-        nuevouser = json.loads(request.data.decode('utf_8'))
-        registrouser(nuevouser)
-        return  render_template('form-registro.html')
-        
-   else:
-        return  render_template('form-registro.html')
-=======
+
     return render_template ('form-registro.html')
 
 @app.route('/nosotro.html')
@@ -51,4 +43,3 @@ def ppiloto():
 def PanelControl():
     return render_template ('Panel_Control.html')
     
->>>>>>> 2fc1fd38c4d081ae76e137a579fbc207d7bde28c
