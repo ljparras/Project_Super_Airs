@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Airs PC</title>
-    <link rel="stylesheet" href="assets/css/panel.css">
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="shortcut icon" type="image/jpeg"href="assets/imgs/logo/logo2.png">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/panel.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/normalize.css')}}">
+    <link rel="shortcut icon" type="image/jpeg"href="{{url_for('static', filename='imgs/logo/Logo2.png')}}">
 
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="Index.html"></a><img src="assets/imgs/logo/Logo2.png"alt=""></a>
+            <a href="Index.html"></a><img src="{{url_for('static', filename='imgs/logo/Logo2.png')}}"alt=""></a>
         </div>
             <div class="menuv">
                 <ul>
@@ -30,7 +30,7 @@
     <section>
         <div class="container">
             <div class="banner2">
-                <img src="assets/imgs/avion.jpg" style="width: 100%;">
+                <img src="{{url_for('static', filename='imgs/avion.jpg')}}" style="width: 100%;">
             </div>
             <div class="bienvenida">
                 <h2>Bienvenido</h2>
@@ -90,10 +90,10 @@
         <div class="linea"></div>
         <div class="redes">
             <p><span class="face"></span><span class="face"></span></p>
-            <a href="https://www.facebook.com/"target="_blank"><img src="assets/imgs/iconos/facebook.svg"></a>
-            <a href="https://www.instagram.com/"target="_blank"><img src="assets/imgs/iconos/instagram.svg"></a>
-            <a href="https://www.linkedin.com/"target="_blank"><img src="assets/imgs/iconos/linkedin.svg"></a>
-            <a href="https://www.whatsapp.com/"target="_blank"><img src="assets/imgs/iconos/whatsapp.svg"></a>     
+            <a href="https://www.facebook.com/"target="_blank"><img src="{{url_for('static', filename='imgs/iconos/facebook.svg')}}"></a>
+                <a href="https://www.instagram.com/"target="_blank"><img src="{{url_for('static', filename='imgs/iconos/instagram.svg')}}"></a>
+                <a href="https://www.linkedin.com/"target="_blank"><img src="{{url_for('static', filename='imgs/iconos/linkedin.svg')}}"></a>
+                <a href="https://www.whatsapp.com/"target="_blank"><img src="{{url_for('static', filename='imgs/iconos/whatsapp.svg')}}"></a>     
         </div>
         <div class="derechos">
             <p>Super Airs | Todos los derechos reservados.</p>
