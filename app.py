@@ -20,8 +20,13 @@ def nosotros():
 
 @app.route('/pcontacto.html')
 def contacto():
-    return render_template ('pcontacto.html')    
-
+    return render_template ('pcontacto.html')
+    
 @app.route('/p_piloto.html')
 def ppiloto():
     return render_template ('p_piloto.html') 
+
+@app.route('/Panel_Control.html')
+def PanelControl():
+    return render_template ('Panel_Control.html')
+    
