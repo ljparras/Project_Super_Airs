@@ -195,5 +195,40 @@ function validarFormulario(){
              else{
              document.getElementById("alerta").innerHTML=""; 
             } 
-    formulario.submit();
+    function validacion() {
+
+                let txt_nombre = document.getElementById('txt_nombre').value
+                let txt_apellido = document.getElementById('txt_apellido').value
+                let txt_cedula = document.getElementById('txt_cedula').value
+                let txt_telefono = document.getElementById('txt_telefono').value
+                let txt_direccion = document.getElementById('txt_direccion').value
+                let txt_correo = document.getElementById('txt_correo').value
+                let txt_pass = document.getElementById('txt_pass').value
+                let txt_passconfir = document.getElementById('txt_passconfir').value
+            }
+            if (validacion()) {
+            
+                const nuevouser = {
+                    txt_nombre: txt_nombre.value,
+                    txt_apellido: txt_apellido.value,
+                    txt_cedula: txt_cedula.value,
+                    txt_telefono: txt_telefono.value,
+                    txt_direccion: txt_direccion.value,
+                    txt_correo: txt_correo.value,
+                    txt_pass: txt_pass.value,
+                    txt_passconfir: txt_passconfir.value
+            
+            
+            
+                }
+            
+                fetch('/formregistro', {
+                    method: 'POST',
+                    body: JSON.stringify(nuevouser),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+            }
+
 } 
