@@ -10,6 +10,7 @@
     font-family: 'Mogen';
     src: url(../fonts/Mogen-Bold.ttf);
 }
+
 @font-face {
     font-family: 'iconitos';
     src:  url('../fonts/iconos/icomoon.eot?yhrwrt');
@@ -235,8 +236,6 @@ footer .redes{
 }
 
 footer .redes img{
-    width: 25px;
-    height: 25px;
     padding: 2px 10px;
 }
 footer .derechos{
