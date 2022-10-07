@@ -35,7 +35,7 @@
 <div id="fondo" class="flex-center">
    <div class= "container" >
     <h4>Crea tu cuenta Super Airs</h4>
-    <form name="addForm" class="form" action="#" method="post">
+    <form name="addForm" class="form" action="/registro" method="POST">
     <div class="mb-3">
       <div id="alerta"></div>
       
@@ -80,11 +80,11 @@
 
       <div class="mb-3">
         <label for="pass" class="form-label">Contraseña:</label>
-        <input type="password" class="form-control" id="txt_pass" placeholder="Escriba una contraseña" required>
+        <input type="password" class="form-control" name="password" id="txt_pass" placeholder="Escriba una contraseña" required>
       </div>
       <div class="mb-3">
         <label for="passconfir" class="form-label">Confirme Contraseña:</label>
-        <input type="password" class="form-control" id="txt_passconfir" placeholder="Escriba nuevamente la contraseña" required>
+        <input type="password" class="form-control" name="confirm-password" id="txt_passconfir" placeholder="Escriba nuevamente la contraseña" required>
       </div>
 
   <a href="#exampleModal" class="vinculo-termino" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -93,7 +93,7 @@
 
 
       <div class="d-grid gap-2">
-        <button class="btn btn-primary" type="button" onclick="validarFormulario();">Registrar</button>
+        <button class="btn btn-primary" type="submit" onclick="validarFormulario();">Registrar</button>
         
       </div> 
 <!-- Modal -->
