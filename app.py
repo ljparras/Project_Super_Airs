@@ -22,23 +22,7 @@ def nosotros():
 @app.route('/pcontacto.html')
 def contacto():
     return render_template ('pcontacto.html')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 @app.route('/registro', methods = ['GET','POST'])
 def registro():
     if request.method == 'POST':
@@ -66,3 +50,12 @@ def listausuarios():
         crsr.execute("SELECT * FROM registro")
         lista=crsr.fetchall()
     return render_template('listausuario.html',lista=lista)
+    
+@app.route('/p_piloto.html')
+def ppiloto():
+    return render_template ('p_piloto.html') 
+
+@app.route('/Panel_Control.html')
+def PanelControl():
+    return render_template ('Panel_Control.html')
+    
