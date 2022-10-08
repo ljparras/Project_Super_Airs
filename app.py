@@ -1,3 +1,5 @@
+from crypt import methods
+from distutils.util import execute
 from flask import Flask, jsonify, request, render_template
 import json
 from src.db.connect import conn
@@ -57,9 +59,3 @@ def ppiloto():
 def PanelControl():
     return render_template ('Panel_Control.html')
     
-@app.route('/Panel.html')
-def PanelControl():
-    return render_template ('Panel_Control.html')
-@app.route('/Panel.html')
-def PanelControl():
-    return render_template ('Panel_Control.html')
