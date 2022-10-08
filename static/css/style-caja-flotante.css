@@ -1,0 +1,82 @@
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins Semi';
+    src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+
+.container h4 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 6px;
+    font-family: 'Poppins';
+    }
+.container {
+    width: 490px;
+    background: #1DA2AC;
+    padding: 25px;
+    margin: auto;
+    margin-top: 0px;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    margin-bottom: 0px;
+}
+
+
+
+.fondo2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    background-image: url(../imgs/Fondo-from-registro.jpg); 
+}
+
+
+.form-control{
+font-size: 14px;
+width: 100%;
+background: #BBFAFF;
+padding: 4px;
+border-radius: 6px;
+margin-top: 10px;
+border: 1px solid #FFFFFF;
+font-family: 'Poppins';
+
+}
+
+.vinculo-termino {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 8px;
+    border-radius: 0; 
+    text-decoration: none; 
+}
+
+.vinculo-termino:hover{
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+.mb-3 {
+    margin-top: 0px;  
+}
+
+.modal-title{
+   color: black;
+  
+}
+
+.modal-body{
+    color: black;
+    text-align: justify;
+}
+.form-label{
+    margin-top: 0px;  
+    font-size: 14px;
+    font-family: 'Poppins';
+}

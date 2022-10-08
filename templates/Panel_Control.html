@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Airs PC</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/panel.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/normalize.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/estilo-form-piloto.css')}}">
+    <link rel="shortcut icon" type="image/jpeg"href="{{url_for('static', filename='imgs/logo/logo2.png')}}">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="Index.html"></a><img src="{{url_for('static', filename='imgs/logo/Logo2.png')}}"alt=""></a>
+        </div>
+            <div class="menuv">
+                <ul>
+                    <li><a href="#"><span class="perfil"></span> Perfil</a></li>
+                    <li><a href="#"><span class="grupo"></span> Pilotos</a></li>
+                    <li><a href="#"><span class="avion"></span> Vuelos</a></li>
+                    <li><a href="#"><span class="u-cliente"></span> Clientes</a></li>
+                </ul>
+            </div>
+            <div class="cerrar">
+                <a href="#">Cerrar Sesión</a>
+            </div>
+        </div>
+    </header>
+    </div>
+    <section>
+        <div class="container">
+            <div class="banner2">
+                <img src="{{url_for('static', filename='imgs/avion.jpg')}}" style="width: 100%;">
+            </div>
+            <div class="bienvenida">
+                <h2>Bienvenido</h2>
+                <h3>Administrador: Juan Jacinto Junca</h3>
+            </div>
+            <div class="filtros">
+                <div class="fecha">
+                    <input type="date" id="start" name="trip-start"
+                        value="2022-09-26"
+                        min="2022-09-01" max="2023-12-31">
+                </div>
+                <div class="agregar">
+                    <a href="#"><span class="agrega"></span></a>
+                </div>
+                <div class="editar">
+                    <a href="#"><span class="lapiz"></span></a>
+                </div>
+                <div class="eliminar">
+                    <a href="#"><span class="basura"></span></a>
+                </div>
+                <div class="buscador">
+                    <input type="text" name="search" placeholder="Buscar" class="src" autocomplete="off">
+                </div>
+                
+            </div>
+            <div class="tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cod Vuelo</th>
+                            <th>Origen</th>
+                            <th>Destino</th>
+                            <th>Piloto</th>
+                            <th>Estado</th>
+                            <th>Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>V-123</th>
+                            <th>Bogota</th>
+                            <th>Cali</th>
+                            <th>635 Cristobal Castaño</th>
+                            <th>Aterrizando</th>
+                            <th>27/Sep/2022</th>
+                        </tr>
+                       
+                        <tr>
+                            <th>V-123</th>
+                            <th>Bogota</th>
+                            <th>Cali</th>
+                            <th>635 Cristobal Castaño</th>
+                            <th>Aterrizando</th>
+                            <th>27/Sep/2022</th>
+                        </tr>
+                        <tr>
+                            <th>V-123</th>
+                            <th>Bogota</th>
+                            <th>Cali</th>
+                            <th>635 Cristobal Castaño</th>
+                            <th>Aterrizando</th>
+                            <th>27/Sep/2022</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <div class="tabla2">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Cod Piloto</th>
+                                <th>Nombre Piloto</th>
+                                <th>Vuelo Asignado</th>
+                                <th>Estado</th>
+                                <th>Fecha</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <th>635</th>
+                            <th>Cristobal Castaño</th>
+                            <th>V-123</th>
+                            <th>Aterrizando</th>
+                            <th>27/Sep/2022</th>
+
+                           
+                            <tr>
+                                <th>V-123</th>
+                                <th>Bogota</th>
+                                <th>Cali</th>
+                                <th>Aterrizando</th>
+                                <th>27/Sep/2022</th>
+                            </tr>
+                            <tr>
+                                <th>V-123</th>
+                                <th>Bogota</th>
+                                <th>Cali</th>
+                                <th>Aterrizando</th>
+                                <th>27/Sep/2022</th>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+        <form class="registro-pilotos">
+            <h2>Ingrese datos del nuevo piloto</h2>
+            <div class="contenido-form">
+                <div class="col">
+                  <label for="Nombre" class="form-label">Nombre:</label>
+                  <input type="text" class="form-control" placeholder="Ingrese su nombre">
+                </div>
+                <div class="col">
+                  <label for="Apellido" class="form-label">Apellido:</label>
+                  <input type="text" class="form-control" placeholder="Ingrese su apellido">
+                </div>
+
+                <div class="col">
+                  <label for="Cedula" class="form-label">Cédula:</label>
+                  <input type="text" class="form-control" placeholder="Ingrese cédula">
+                </div>
+                <div class="col">
+                  <label for="Telefono" class="form-label">Teléfono:</label>
+                  <input type="text" class="form-control" placeholder="Teléfono">
+                </div>
+        
+                <div class="col">
+                  <label for="Direccion" class="form-label">Dirección:</label>
+                  <input type="text" class="form-control" placeholder="Ingrese su Dirección">
+                </div>
+                <div class="col">
+                  <label for="emali" class="form-label">Correo Electrónico:</label>
+                  <input type="email" class="form-control" placeholder="Ingrese su Correo">
+                </div>
+        
+              <div class="col">
+                <label for="pass" class="form-label">Contraseña:</label>
+                <input type="password" class="form-control" id="pass" placeholder="Escriba una contraseña">
+              </div>
+              <div class="col">
+                <label for="passconfir" class="form-label">Código Id:</label>
+                <input type="password" class="form-control" id="passconfir" placeholder="Código Id">
+              </div>  
+              <div class="boton-re">
+                <button>Registrar</button>
+                </div>
+            </form>     
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="linea"></div>
+        <div class="redes">
+            <p><span class="face"></span><span class="face"></span></p>
+            <a href="https://www.facebook.com/"target="_blank"><img src="{{url_for('static', filename='/imgs/iconos/facebook.svg')}}"></a>
+            <a href="https://www.instagram.com/"target="_blank"><img src="{{url_for('static', filename='imgs/iconos/instagram.svg')}}"></a>
+            <a href="https://www.linkedin.com/"target="_blank"><img src="{{url_for('static', filename='imgs/iconos/linkedin.svg')}}"></a>
+            <a href="https://www.whatsapp.com/"target="_blank"><img src="{{url_for('static', filename='imgs/iconos/whatsapp.svg')}}"></a>     
+        </div>
+        <div class="derechos">
+            <p>Super Airs | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

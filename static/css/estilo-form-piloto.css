@@ -1,0 +1,42 @@
+.registro-pilotos {
+    width: 85%;
+    background-color: #658cb033;
+    margin:auto;
+    border: #807b7b;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #1257ab;
+    text-align: center;
+    padding: 20px 0px 6px 0px;
+}
+.registro-pilotos .col {
+    width: 45%;
+    display: inline-grid;
+    margin-left: 13px;
+}
+
+.registro-pilotos .col label{
+    padding: 10px;
+}
+
+.registro-pilotos .col input{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #658cb033;
+}
+
+.boton-re{
+    width: 110px;
+    margin: auto;
+}
+button {
+    background-color: #1257ab;
+    padding: 15px;
+    border-radius: 12px;
+    border:none;
+    color: white;
+    margin: 15px 0px;
+}

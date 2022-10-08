@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins Semi';
+    src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+
+
+*{ 
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.img{
+      
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    background-image: url(../imgs/f-nosotros.jpg);
+}
+.container{
+    color: rgb(0, 0, 0);
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    
+    
+   
+}
+
+div .fondo{
+    margin: 20px;
+	padding: 0;
+    text-align: center;
+    margin-top: -10px;
+    
+}
+
+.Titulo h1{
+    bottom: 10px;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+.Titulo p{
+    text-align: justify;
+    font-family: 'Poppins';
+}
+

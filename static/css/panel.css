@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'Bebas';
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: 'Mogen';
+    src: url(../fonts/Mogen-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'iconitos';
+    src:  url('../fonts/iconos/icomoon.eot?yhrwrt');
+    src:  url('../fonts/iconos/icomoon.eot?yhrwrt#iefix') format('embedded-opentype'),
+      url('../fonts/iconos/icomoon.ttf?yhrwrt') format('truetype'),
+      url('../fonts/iconos/icomoon.woff?yhrwrt') format('woff'),
+      url('../fonts/iconos/icomoon.svg?yhrwrt#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+*{
+    font-family: 'Poppins';
+}
+
+header {
+    position: relative;
+    float:left;
+    background-color: #000;
+    overflow: hidden;
+    margin-top: 0px;
+    min-height: 120vh;
+    -webkit-box-shadow: 6px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 6px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+header .logo{
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+    background: #1d1d1d
+
+}
+header .logo img {
+    height: 150px;
+    padding: 20px 40px;
+    margin: auto;
+}
+header .menuv ul li{
+    list-style: none;
+}
+
+header .menuv ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 20px;
+    background-color: #000;
+    margin: 8px 0px;
+    border-radius: 30px;
+    text-align: left;
+    width: 130px;
+    display: inline-block;
+}
+
+header .menuv ul li .perfil::after{
+    font-family: 'iconitos';
+    content: '\e976';
+}
+header .menuv ul li .grupo::after{
+    font-family: 'iconitos';
+    content: '\e972';
+}
+
+header .menuv ul li .avion::after{
+    font-family: 'iconitos';
+    content: '\e9af';
+}
+header .menuv ul li .u-cliente::after{
+    font-family: 'iconitos';
+    content: '\e9b2';
+}
+header .cerrar {
+    background-color: #444242;
+    margin: 45px auto;
+    padding: 5px 20px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    bottom: 30px;
+    width: 100px;
+}
+header .cerrar a{
+    color: white;
+}
+section .container {
+    position: relative;
+}
+
+section {
+    align-items: center;
+    width: calc(100% - 242px);
+    float: right;
+    display: flex;
+    flex-direction: column;
+    min-height: 120vh;
+}
+.container{
+    padding-bottom: 30px;
+}
+
+section .container banner2{
+    height: 30px;
+}
+section .bienvenida{
+    text-align: center;
+    padding-inline-start: 10px;
+}
+
+.filtros {
+    margin: auto;
+    width: 88%;
+}
+
+.filtros .fecha {
+    float: left;
+}
+  
+.filtros .fecha input {
+        margin: .4rem 0;
+        padding: 3px;
+        border-radius: 6px;
+}
+.filtros .agregar, .editar, .eliminar{
+    padding: 5px 10px;
+    display: inline;
+}
+.filtros .agregar a .agrega::after{
+    font-family: 'iconitos';
+    content: '\e973';
+    color: #060b41;
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+.filtros .editar a .lapiz::after{
+    font-family: 'iconitos';
+    content: '\e905';
+    color: #1257ab;
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+.filtros .eliminar a .basura::after{
+    font-family: 'iconitos';
+    content: '\e9ac';
+    color: #da0505;
+    font-size: xx-large;
+    text-decoration: none;
+}
+.filtros .buscador{
+    margin-block-end: 20px;
+    float: right;
+}
+.buscador input.src{
+    padding: 9px 10px 9px 32px;
+    outline: none;
+    font-size: 14px;
+    border-radius: 15px;
+    color: #242525;
+    border: 3px solid #1257ab;
+    background: rgb(243, 239, 239) url(../imgs/lupa.png) no-repeat 9px center;
+    float: inline-end;
+    width: 200px;
+    transition: all .5s;
+    max-width: 100%;
+    margin: auto;
+}
+
+table {
+    border: 1px solid #000;
+    border-collapse: separate;
+    border-spacing: 5px;
+    border-radius: 10px;
+    align-self: center;
+    width: 90%;
+    padding: 10px;
+    background-color: #658cb033;
+    margin:auto;
+    padding-top: 20px;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+}
+thead {
+    font-family: 'Bebas';
+    font-size: 20px;
+    background-color: #060b41;
+    color: #fff;
+}
+
+tr:nth-child(even){
+    background-color: #807b7b;
+}
+
+table th{
+    padding: 8px 0px;
+}
+
+.tabla2{
+    padding-top: 25px;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    margin-top: auto;
+}
+
+footer .linea{
+    border-top: 1px solid black;
+    height: 5px;
+    max-width: 100%;
+}
+
+footer .redes{
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes img{
+    padding: 2px 10px;
+}
+footer .derechos{
+    background: #1257ab;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    
+}
+.derechos p {
+    font-size: medium;
+    margin-top: 2px;
+    padding: 2px 0px;
+}
