@@ -57,3 +57,9 @@ def ppiloto():
 def PanelControl():
     return render_template ('Panel_Control.html')
     
+@app.route('/Panel.html')
+def PanelControl():
+    return render_template ('Panel_Control.html')
+@app.route('/Panel.html')
+def PanelControl():
+    return render_template ('Panel_Control.html')
