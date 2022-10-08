@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request, render_template
+from flask import Flask, jsonify, request, render_template, ur
 import json
 from src.db.connect import conn
 import sqlite3
@@ -17,7 +17,7 @@ def Index():
 def nosotros():
     return render_template ('nosotro.html')
 
-@app.route('/pcontacto.html')
+@app.route('/contacto')
 def contacto():
     return render_template ('pcontacto.html')
     
