@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link  rel="stylesheet" href="{{url_for('static', filename='css/style-b-navegacion.css')}}">
+    <link  rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min1.css')}}">
+    <link  rel="stylesheet" href="{{url_for('static', filename='css/Style-perfil-user.css')}}">
+
+    <header><!--Inicio Barra de Navegacion-->
+        <div class="interior">
+  
+          <nav class="navegacion">
+            <ul>
+                
+                <li><a href="{{url_for('inicio')}}" target="blank">INICIO</a></li>
+                <li><a href="{{url_for('contacto')}}" target="blank">Contacto</a></li>
+              <li><a href="" target="blank">Nosotros</a></li>
+            </ul>
+          </nav>
+        </div>
+           
+      </header> <!--Fin Barra de Navegacion-->
+</head>
+<body>
+    <div class="container my-3">
+        <div class="row">
+            
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-4 bg-white">
+               <center> <img class "avatar" src="{{url_for('static', filename='imgs/userAvatar.png')}}" width = "145" alt="avatar"> </center>
+          
+               <!-- <h2>Formulario de Lenguaje</h2>-->
+                <form name="addForm" class="form" action="/perfiluser" method="POST">
+                  <div class="mb-3">
+                     <div class="row">
+
+                        <div class="col">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" name="nombre" id="nombre" value="{{lista[0][1]}}"  placeholder="" disabled="" />
+                        </div>
+
+                         <div class="col">
+                            <label for="descripcion" class="form-label">Apellido:</label>
+                            <input type="text" class="form-control" name="apellido" id="apellido" value="{{lista[0][2]}}" placeholder=""   disabled=""/>
+                        </div>
+
+                      </div> 
+                    </div>
+                    <div class="mb-3">
+                        <div class="row">
+   
+                           <div class="col">
+                               <label for="nombre" class="form-label">Cedula</label>
+                               <input type="text" class="form-control" name="cedula" id="cedula" value="{{lista[0][3]}}" placeholder=""  disabled="" />
+                           </div>
+   
+                            <div class="col">
+                               <label for="descripcion" class="form-label">Telefono:</label>
+                               <input type="text" class="form-control" name="telefono" id="telefono" value="{{lista[0][4]}}" placeholder=""  disabled=""/>
+                           </div>
+   
+                        </div> 
+                    </div>
+                     
+                    <div class="mb-3">
+                        <div class="row">
+   
+                           <div class="col">
+                               <label for="nombre" class="form-label">Direccion</label>
+                               <input type="text" class="form-control" name="direccion" id="direccion" value="{{lista[0][5]}}" placeholder=""  disabled=""/>
+                           </div>
+   
+                            <div class="col">
+                               <label for="descripcion" class="form-label">Email:</label>
+                               <input type="text" class="form-control" name="email" id="email" value="{{lista[0][6]}}" placeholder=""  disabled="" />
+                           </div>
+   
+                        </div> 
+                    </div>
+                 
+                    
+   
+                   
+                    <div class="d-grid gap-2">
+                        <input class="btn btn-secondary"  type="button" value ="Editar información" id ="editar_perfil" onclick="activarEditPerfil();" >
+                        <button class="btn btn-success" type="submit" id ="guardar_perfil"> Actulizar información</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 py-4 bg-white">
+                <h2>Tus Reservas Actules</h2>
+                <table class="table table-success table-striped">
+                    <thead>
+                        <tr>
+                            <th class="centrado">Codigo</th>
+                            <th class="centrado">Avion</th>
+                            <th class="centrado">Piloto</th>
+                            <th class="centrado">Capacidad</th>
+                            <th class="centrado">Estado</th>
+                            <th class="centrado">Salida</th>
+                            <th class="centrado">Llegada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="centrado">---</td>
+                            <td class="centrado">---</td>
+                            <td class="centrado">---</td>
+                            <td class="centrado">---</td>
+                            <td class="centrado">---</td>
+                            <td class="centrado">---</td>
+                            <td class="centrado">---</td>
+                        </tr>
+                        <tr>
+                            <td class="centrado">---</td>
+                            <td class="centrado">---</td>
+                            <td class="centrado">---</td>
+                            <td class="centrado">---</td>
+                            <td class="centrado">---</td>
+                            <td class="centrado">---</td>
+                            <td class="centrado">---</td>
+                        </tr>
+                        <tr>
+                            <td class="centrado">---</td>
+                            <td class="centrado">---</td>
+                            <td class="centrado">---</td>
+                            <td class="centrado">---</td>
+                            <td class="centrado">---</td>
+                            <td class="centrado">---</td>
+                            <td class="centrado">---</td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="{{url_for('static', filename='js/validar-form-registro.js')}}"></script>
+</body>
+</html>

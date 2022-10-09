@@ -196,4 +196,16 @@ function validarFormulario(){
              document.getElementById("alerta").innerHTML=""; 
             } 
     formulario.submit();
-} 
+}
+document.getElementById('guardar_perfil').style.display = "none";
+function activarEditPerfil(){
+    document.getElementById('nombre' ).disabled = false
+    document.getElementById('apellido').disabled = false
+    document.getElementById('cedula').disabled = false
+    document.getElementById('telefono').disabled = false
+    document.getElementById('direccion').disabled = false
+    document.getElementById('email').disabled = false
+    document.getElementById('guardar_perfil').style.display = "block";
+    document.getElementById('editar_perfil').style.display = "none";
+    
+}
