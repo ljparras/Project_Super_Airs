@@ -23,8 +23,8 @@
           <nav class="navegacion">
             <ul>
                 <li><a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal" target="blank" >Login</a></li>
-                <li><a href="pcontacto.html" target="blank">Contacto</a></li>
-                <li><a href="nosotro.html" target="blank">Nosotros</a></li>
+                <li><a href="{{url_for('contacto')}}" target="blank">Contacto</a></li>
+                <li><a href="{{url_for('nosotros')}}" target="blank">Nosotros</a></li>
               <li class="submenu">
                 <a href="" target="blank">Área Administrativa</a>
                 <ul class="hijos">
@@ -118,10 +118,10 @@
                       <label for="Password">Contraseña</label>  
                       <input type="Password" placeholder="Ingrese contraseña">
           
-                      <input type="submit" value="Sign In">
-          
+                      <a class= "btn btn-primary" href="{{url_for('perfiluser')}}">LOGIN</a>
+                        <br>
                       <a href="#">Olvidé mi Contraseña</a><br>
-                      <a href="form-registro.html">Crear Cuenta</a>
+                      <a href="{{url_for('registro')}}">Crear Cuenta</a>
                   </form>
               </div>
            
