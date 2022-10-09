@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request, render_template, ur
+from flask import Flask, jsonify, request, render_template, url_for
 import json
 from src.db.connect import conn
 import sqlite3
@@ -9,13 +9,11 @@ app = Flask(__name__)
 def inicio():
     return render_template ('Index.html')
 
-@app.route('/Index.html')
-def Index():
-    return  render_template('Index.html')
 
-@app.route('/nosotro.html')
+
+@app.route('/nosotros')
 def nosotros():
-    return render_template ('nosotro.html')
+    return render_template ('nosotros.html')
 
 @app.route('/contacto')
 def contacto():
@@ -56,4 +54,29 @@ def ppiloto():
 @app.route('/Panel_Control.html')
 def PanelControl():
     return render_template ('Panel_Control.html')
+    
+@app.route('/perfiluser' , methods = ['GET','POST'])
+def perfiluser():
+     if request.method == 'GET':
+        conn = sqlite3.connect('db/superAirs.db')
+        crsr=conn.cursor()
+        crsr.execute("SELECT * FROM registro")
+        lista=crsr.fetchall()
+        return render_template ('perfiluser.html', lista=lista)
+ 
+     if  request.method == 'POST' :
+        conn = sqlite3.connect('db/superAirs.db')
+        nombre = request.form['nombre']
+        apellido = request.form['apellido']
+        cedula = request.form['cedula']
+        telefono = request.form['telefono']
+        direccion = request.form['direccion']
+        email = request.form['email']
+        conn.execute('UPDATE registro SET  Nombre = "%s", Apellido = "%s", Cedula = "%s", Telefono = "%s", Direccion ="%s"   where Email = "%s"' % (nombre, apellido, cedula, telefono, direccion, email))
+        crsr=conn.cursor()
+        crsr.execute("SELECT * FROM registro")
+        lista=crsr.fetchall()
+        conn.commit()
+        conn.close()
+        return render_template('perfiluser.html', lista=lista)
     
