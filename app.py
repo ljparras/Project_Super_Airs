@@ -72,7 +72,9 @@ def perfiluser():
         telefono = request.form['telefono']
         direccion = request.form['direccion']
         email = request.form['email']
+        
         conn.execute('UPDATE registro SET  Nombre = "%s", Apellido = "%s", Cedula = "%s", Telefono = "%s", Direccion ="%s"   where Email = "%s"' % (nombre, apellido, cedula, telefono, direccion, email))
+        
         crsr=conn.cursor()
         crsr.execute("SELECT * FROM registro")
         lista=crsr.fetchall()
