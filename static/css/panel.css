@@ -154,7 +154,6 @@ section .bienvenida{
     content: '\e905';
     color: #1257ab;
     font-size: xx-large;
-    text-decoration: none;
 }
 
 .filtros .eliminar a .basura::after{
@@ -212,7 +211,9 @@ tr:nth-child(even){
 table th{
     padding: 8px 0px;
 }
-
+.tabla1{
+    display: none;
+}
 .tabla2{
     padding-top: 25px;
 }
