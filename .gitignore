@@ -4,3 +4,4 @@ env_g
 requirements.txt
 EntornoA
 entvi
+*.lock

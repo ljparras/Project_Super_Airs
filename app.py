@@ -51,10 +51,24 @@ def listausuarios():
 def ppiloto():
     return render_template ('p_piloto.html') 
 
-@app.route('/Panel_Control.html')
+@app.route('/Panel_Control', methods = ['GET','POST'])
 def PanelControl():
-    return render_template ('Panel_Control.html')
+    if request.method == 'POST':
+        conn = sqlite3.connect('db/superAirs.db')
+        nombre = request.form['nombre']
+        apellido = request.form['apellido']
+        cedula = request.form['cedula']
+        telefono = request.form['telefono']
+        direccion = request.form['direccion']
+        correo = request.form['correo']
+        password = request.form['password']
+        conn.execute("INSERT INTO piloto (Nombre,Apellido,Cedula,Telefono,Direccion,Email,Pass) VALUES (?,?,?,?,?,?,?)",
+        (nombre,apellido,cedula,telefono,direccion,correo,password))
+        conn.commit()
+        conn.close()
     
+    return render_template ('Panel_Control.html')
+
 @app.route('/perfiluser' , methods = ['GET','POST'])
 def perfiluser():
      if request.method == 'GET':
