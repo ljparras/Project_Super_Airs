@@ -106,7 +106,8 @@
                         <thead>
                             <tr>
                                 <th>Cod</th>
-                                <th>Nombre Piloto</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
                                 <th>Cédula</th>
                                 <th>Teléfono</th>
                                 <th>Direccion</th>
@@ -117,25 +118,30 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <th>635</th>
-                            <td>Cristobal Castaño</td>
-                            <td>35678123</td>
-                            <td>3102349875</td>
-                            <td>Cra4 # 12-65</td>
-                            <td>ccristobal@gmail.com</td>
-                            <td>Cra41265</td>
-                            <td>
-                               <button class="bot_ver">Ver</button>
-                                <button>Editar</button>
-                               <a href="https://www.facebook.com/"target="_blank"><img src="{{url_for('static', filename='/imgs/iconos/facebook.svg')}}"></a>
-                            </td>
+                            {% for lista in lista %}
+                            <tr>
+                                <td>{{lista[0]}}</td>
+                                <td>{{lista[1]}}</td>
+                                <td>{{lista[2]}}</td>
+                                <td>{{lista[3]}}</td>
+                                <td>{{lista[4]}}</td>
+                                <td>{{lista[5]}}</td>
+                                <td>{{lista[6]}}</td>
+                                <td>{{lista[7]}}</td>
+                                <td>
+                                <button class="bot_ver">Ver</button>
+                                    <button>Editar</button>
+                                <a href="https://www.facebook.com/"target="_blank"><img src="{{url_for('static', filename='/imgs/iconos/facebook.svg')}}"></a>
+                                </td>
+                            </tr>
+                            {% endfor %}
                         </tbody>
                     </table>
             </div>
         </div>
         <div class="contenido-form">
         <h2>Ingrese datos del nuevo piloto</h2>
-            <form action="/piloto" method="POST" class="registro-pilotos">
+            <form action="/PanelControl" method="POST" class="registro-pilotos">
             
                 <div class="col">
                   <label for="Nombre" class="form-label">Nombre:</label>
@@ -171,9 +177,9 @@
                     <label for="Cod_id" class="form-label">Código Id:</label>
                     <input type="text" class="form-control" id="identi" placeholder="Código Id">
                 </div>
-                <input type="submit" value="Registrar">
+                
                 <div class="boton-re">
-                <button>Registrar</button>
+                <button type="submit">Registrar</button>
                 </div>
             </form>     
         </div>
