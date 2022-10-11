@@ -51,7 +51,7 @@ def listausuarios():
 def ppiloto():
     return render_template ('p_piloto.html') 
 
-@app.route('/Panel_Control', methods = ['GET','POST'])
+@app.route('/PanelControl', methods = ['GET','POST'])
 def PanelControl():
     if request.method == 'POST':
         conn = sqlite3.connect('db/superAirs.db')
