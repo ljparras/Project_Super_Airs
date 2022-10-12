@@ -209,3 +209,10 @@ function activarEditPerfil(){
     document.getElementById('editar_perfil').style.display = "none";
     
 }
+
+function validarlogin(){
+    var User =  document.getElementById('usuariologin').value
+    var userpass =  document.getElementById('passlogin').value
+    
+    console.log(User)
+}

@@ -49,12 +49,12 @@
       
               <h4>Login Admin</h4>
               <!-- Nombre de usuario-->
-              <form>
+              <form class="form" action="" method="POST">
                <label for="username">Usuario</label>  
                <input type="text" placeholder="Ingrese su usuario">
       
                <!-- Password -->
-              <form>
+             
                   <label for="Password">Contraseña</label>  
                   <input type="Password" placeholder="Ingrese contraseña">
       
@@ -78,12 +78,11 @@
       
               <h4>Login Pilotos</h4>
               <!-- Nombre de usuario-->
-              <form>
+              <form class="form" action="" method="POST">
                <label for="username">Usuario</label>  
                <input type="text" placeholder="Ingrese su usuario">
       
                <!-- Password -->
-              <form>
                   <label for="Password">Contraseña</label>  
                   <input type="Password" placeholder="Ingrese contraseña">
       
@@ -109,16 +108,28 @@
           
                   <h1>LOGIN</h1>
                   <!-- Nombre de usuario-->
-                  <form>
-                   <label for="username">Usuario</label>  
-                   <input type="text" placeholder="Ingrese su usuario">
+                  {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        {% for message in  messages%}
+                        <div class= 'alert alert-success'>
+                            {{message}}
+                        </div>
+                        {%  endfor%}
+                    {%  endif %}
+                  {%  endwith %}
+                  <form  class="form" action="{{ url_for('logeo')}}" method="POST" >
+                        <label for="username">Usuario</label>  
+                        <input type="text" class="form-control" name="username" id="username" placeholder="" required>
           
-                   <!-- Password -->
-                  <form>
-                      <label for="Password">Contraseña</label>  
-                      <input type="Password" placeholder="Ingrese contraseña">
+                         <!-- Password -->
+                 
+                            <label for="Password">Contraseña</label>  
+                            <input type="Password" name="password" id="password" placeholder="Ingrese contraseña">
           
-                      <a class= "btn btn-primary" href="{{url_for('perfiluser')}}">LOGIN</a>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" type="submit" name="login_button" id="login_button" onclick=""> ENTRAR</button>
+                                
+                              </div> 
                         <br>
                       <a href="#">Olvidé mi Contraseña</a><br>
                       <a href="{{url_for('registro')}}">Crear Cuenta</a>
@@ -128,6 +139,8 @@
            
           </div>
         </div>
+        
+            </script>   
       </div><!--Fin del modal popUp-->
     
     <div class="containerg">     

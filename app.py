@@ -1,14 +1,40 @@
-from flask import Flask, jsonify, request, render_template, url_for
-import json
+from sre_constants import SUCCESS
+from flask import Flask, jsonify, request, render_template, flash, redirect, url_for
 from src.db.connect import conn
 import sqlite3
-
 app = Flask(__name__)
+app.secret_key = 'my_secret_key'
 
-@app.route('/')
+@app.route('/', methods=['GET','POST'])
 def inicio():
+    
     return render_template ('Index.html')
 
+@app.route('/logeo', methods=['GET','POST'])
+def logeo():
+    print(request.method)
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        conn = sqlite3.connect('db/superAirs.db')
+       
+        crsr=conn.cursor()
+        crsr.execute('SELECT * FROM registro where Email = "%s"' % (username))
+        lista=crsr.fetchone()
+
+        print(lista)
+        conn.close()
+        if lista == None: 
+            success_messaje = "USUARIO NO REGISTRADO"
+            flash(success_messaje)
+            return render_template ('Index.html')
+        if lista[6] == username and lista[7] == password:
+            return render_template ('perfiluser.html', lista=lista)
+        else:
+            success_messaje = "CORREO O CONTRASEÑA INCORRECTOS"
+            flash(success_messaje)
+            return render_template ('Index.html')
+    
 
 
 @app.route('/nosotros')
@@ -58,8 +84,7 @@ def PanelControl():
         crsr=conn.cursor()
         crsr.execute("SELECT * FROM piloto")
         lista=crsr.fetchall()
-
-        return render_template('PanelControl.html',lista=lista)
+        return render_template('PanelControl.html', lista=lista)
 
     if request.method == 'POST':
         conn = sqlite3.connect('db/superAirs.db')
@@ -70,12 +95,16 @@ def PanelControl():
         direccion = request.form['direccion']
         correo = request.form['correo']
         password = request.form['password']
+        
         conn.execute("INSERT INTO piloto (Nombre,Apellido,Cedula,Telefono,Direccion,Correo,Pass) VALUES (?,?,?,?,?,?,?)",
         (nombre,apellido,cedula,telefono,direccion,correo,password))
         conn.commit()
+        
+        crsr=conn.cursor()
+        crsr.execute("SELECT * FROM piloto")
+        lista=crsr.fetchall()
         conn.close()
-    
-        return render_template ('PanelControl.html')
+        return render_template ('PanelControl.html', lista=lista) 
 
 
 @app.route('/perfiluser' , methods = ['GET','POST'])
